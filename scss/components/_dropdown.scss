@@ -1,10 +1,12 @@
+@use '../abstracts';
+
 .dropdown {
   position: absolute;
   left: 0;
 
   width: min(1240px, 100%);
   padding-top: 54px;
-  // display: none;
+  display: none;
 
   &__inner {
     --inner-padding: 30px;
@@ -44,14 +46,19 @@
   gap: 14px;
 
   +.menu-column {
-    margin-top: var(--inner-padding);
+    margin-top: 20px;
   }
 
   &__icon {
     position: relative;
+
     flex-shrink: 0;
     width: 36px;
     height: 36px;
+
+    @include abstracts.breakpoint(xl) {
+      display: none;
+    }
   }
 
   &__content {
@@ -61,7 +68,7 @@
   &__icon-1 {
     width: 30px;
     height: 30px;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   &__icon-2 {
@@ -71,12 +78,12 @@
 
     width: 24px;
     height: 24px;
-    object-fit: cover;
+    object-fit: contain;
     filter: var(--menu-column-icon-color);
   }
 
   &__heading {
-    margin-top: 5px;
+    margin-top: 4px;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 150%;
@@ -93,7 +100,7 @@
     line-height: 142.857%;
   }
 
-  &__item:hover > &__link {
+  &__item:hover>&__link {
     color: #0071DC;
     font-weight: 500;
   }
@@ -109,7 +116,7 @@
   position: absolute;
   inset: 0 0 0 var(--main-column-width);
 
-  display: grid;
+  display: none;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   padding-left: var(--inner-padding);
