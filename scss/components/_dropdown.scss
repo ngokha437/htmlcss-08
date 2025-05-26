@@ -100,13 +100,14 @@
     line-height: 142.857%;
   }
 
+  &__item--active>&__link,
   &__item:hover>&__link {
     color: #0071DC;
     font-weight: 500;
   }
 
   &__item {
-    &:hover .sub-menu {
+    &--active .sub-menu {
       display: grid;
     }
   }
