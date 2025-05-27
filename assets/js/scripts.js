@@ -114,13 +114,19 @@ function handleActiveMenu() {
       if (!items.length) return;
 
       removeActive(menu);
-      items[0].classList.add(activeClass);
+      if (window.innerWidth > 991) items[0].classList.add(activeClass);
 
       Array.from(items).forEach((item) => {
         item.onmouseenter = () => {
           if (window.innerWidth <= 991) return;
           removeActive(menu);
           item.classList.add(activeClass);
+        };
+        item.onclick = () => {
+          if (window.innerWidth > 991) return;
+          removeActive(menu);
+          item.classList.add(activeClass);
+          item.scrollIntoView();
         };
       });
     });
@@ -143,21 +149,21 @@ function handleActiveMenu() {
 window.addEventListener("template-loaded", initJsToggle);
 
 function initJsToggle() {
-    $$(".js-toggle").forEach((button) => {
-        const target = button.getAttribute("toggle-target");
-        if (!target) {
-            document.body.innerText = `Cần thêm toggle-target cho: ${button.outerHTML}`;
-        }
-        button.onclick = () => {
-            if (!$(target)) {
-                return (document.body.innerText = `Không tìm thấy phần tử "${target}"`);
-            }
-            const isHidden = $(target).classList.contains("hide");
+  $$(".js-toggle").forEach((button) => {
+    const target = button.getAttribute("toggle-target");
+    if (!target) {
+      document.body.innerText = `Cần thêm toggle-target cho: ${button.outerHTML}`;
+    }
+    button.onclick = () => {
+      if (!$(target)) {
+        return (document.body.innerText = `Không tìm thấy phần tử "${target}"`);
+      }
+      const isHidden = $(target).classList.contains("hide");
 
-            requestAnimationFrame(() => {
-                $(target).classList.toggle("hide", !isHidden);
-                $(target).classList.toggle("show", isHidden);
-            });
-        };
-    });
+      requestAnimationFrame(() => {
+        $(target).classList.toggle("hide", !isHidden);
+        $(target).classList.toggle("show", isHidden);
+      });
+    };
+  });
 }
