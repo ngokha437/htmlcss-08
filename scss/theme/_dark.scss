@@ -6,6 +6,9 @@ html.dark {
 
   --body-bg: #292E39;
   --header-bg-color: #171C28;
+  --footer-bg-color: var(--header-bg-color);
+  --footer-text-color: #9E9DA6;
+
   --top-act-group-bg-color: #292E39;
   --top-act-group-shadow: rgba(0, 0, 0, 0.20);
   --top-act-group-separate: #EDEDF6;

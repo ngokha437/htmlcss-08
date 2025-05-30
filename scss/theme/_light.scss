@@ -6,6 +6,8 @@ html {
 
   --body-bg: #F6F6F6;
   --header-bg-color: #EEE;
+  --footer-bg-color: var(--header-bg-color);
+
   --top-act-group-bg-color: #FFF;
   --top-act-group-shadow: rgba(237, 237, 246, 0.20);
   --top-act-group-separate: #EDEDF6;
