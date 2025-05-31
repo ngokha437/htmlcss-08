@@ -3,6 +3,7 @@
 .footer {
   margin-top: 50px;
   padding: 50px 0;
+  font-size: 1.4rem;
   background: var(--footer-bg-color);
 
   &__row {
@@ -23,7 +24,6 @@
 
   &__desc {
     margin-top: 30px;
-    font-size: 1.5rem;
     line-height: 1.5;
 
     @include abstracts.screen(lg) {
@@ -33,7 +33,6 @@
 
   &__help-text {
     margin-top: 40px;
-    font-size: 1.4rem;
     line-height: 1.4;
   }
 
@@ -50,13 +49,11 @@
   &__link,
   &__text {
     padding: 8px 0;
-    font-size: 1.5rem;
     line-height: 1.4;
   }
 
   &__link {
     display: inline-block;
-    font-size: 1.5rem;
 
     &:hover {
       color: #0071DC;
@@ -111,6 +108,7 @@
 
     @include abstracts.screen(md) {
       width: 50%;
+      font-size: 1.6rem;
     }
 
     @include abstracts.screen(md) {
@@ -131,10 +129,6 @@
 
   }
 
-  &__copyright {
-    font-size: 1.4em;
-  }
-
   &__socials {
     display: flex;
     align-items: center;
@@ -153,6 +147,11 @@
     filter: grayscale(50%);
     transition: translate, filter;
     transition-duration: 0.3s;
+
+    @include abstracts.screen(sm) {
+      width: 42px;
+      height: 42px;
+    }
 
     &--facebook {
       background: #4863A9;
@@ -183,5 +182,9 @@
   &__social-icon {
     width: 14px;
     filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(103deg) brightness(108%) contrast(101%);
+
+    @include abstracts.screen(sm) {
+      width: 18px;
+    }
   }
 }
