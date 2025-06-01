@@ -50,4 +50,11 @@ html {
 
   // Auth
   --auth-content-bg: #FFF;
+
+  @include abstracts.screen(md) {
+    --auth-intro-bg: #FFF;
+  }
+
+  // Form
+  --form-placeholder-color: #D2D1D6;
 }
