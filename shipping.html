@@ -377,7 +377,7 @@
     </div>
 
     <!-- Modal: add new shopping address -->
-    <div id="add-new-address" class="modal show" style="--content-width: 650px">
+    <div id="add-new-address" class="modal hide" style="--content-width: 650px">
       <div class="modal__content">
         <form action="" class="form">
           <h2 class="modal__heading">Add new shipping address</h2>
@@ -433,13 +433,23 @@
             <div class="form__group">
               <label for="city" class="form__label form__label--small">City/District/Town</label>
               <div class="form__text-input form__text-input--small">
-                <input type="text" name="" placeholder="City/District/Town" id="city" class="form__input js-toggle" toggle-target="#city-dialog" />
+                <input
+                  type="text"
+                  name=""
+                  placeholder="City/District/Town"
+                  id="city"
+                  class="form__input js-toggle"
+                  toggle-target="#city-dialog"
+                />
                 <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
 
                 <div id="city-dialog" class="form__select-dialog hide">
+                  <button class="form__close-dialog d-none d-sm-block js-toggle" toggle-target="#city-dialog">
+                    &times;
+                  </button>
                   <div class="form__search">
                     <input type="text" placeholder="Search" class="form__search-input" />
-                    <img src="./assets/icons/search.svg" alt="" class="form__search-icon" />
+                    <img src="./assets/icons/search.svg" alt="" class="form__search-icon icon" />
                   </div>
                   <ul class="form__options-list">
                     <li class="form__option">Ha Noi</li>
