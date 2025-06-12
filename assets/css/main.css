@@ -1509,6 +1509,8 @@ html {
 }
 
 .header {
+  position: relative;
+  z-index: 2;
   background: var(--header-bg-color);
 }
 @media (max-width: 991.98px) {
@@ -2819,7 +2821,7 @@ html {
   }
 }
 .form__dialog-heading {
-  padding: 14px;
+  padding: 20px;
   font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
@@ -2829,7 +2831,7 @@ html {
   position: absolute;
   right: 0;
   top: 0;
-  padding: 2px 18px;
+  padding: 12px 18px;
   opacity: 0.8;
 }
 .form__search {
@@ -2851,14 +2853,17 @@ html {
 }
 @media (max-width: 991.98px) {
   .form__search {
-    height: 42px;
+    height: 48px;
+  }
+  .form__search-icon {
+    width: 20px;
   }
 }
 @media (max-width: 575.98px) {
   .form__search {
     padding: 0 14px;
     border: 1px solid #D2D1D6;
-    margin: 10px 20px 0;
+    margin: 10px 30px 0;
     border-radius: 10px;
   }
 }
@@ -2867,6 +2872,11 @@ html {
   margin-top: 10px;
   overflow-y: auto;
   overscroll-behavior: contain;
+}
+@supports (-webkit-touch-callout: none) {
+  .form__options-list {
+    padding-bottom: 300px;
+  }
 }
 .form__option {
   padding: 8px 20px;
@@ -2882,7 +2892,8 @@ html {
 }
 @media (max-width: 991.98px) {
   .form__option {
-    padding: 14px 20px;
+    padding: 18px 30px;
+    font-size: 1.6rem;
   }
 }
 .form__error {
@@ -3063,7 +3074,7 @@ html {
   flex: 1;
   height: 100%;
   padding-left: 15px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
   line-height: 142.857%;
 }
