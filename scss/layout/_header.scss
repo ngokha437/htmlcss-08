@@ -233,7 +233,7 @@
   &__btn-wrap {
     position: relative;
 
-    &:hover .act-dropdown{
+    &:hover .act-dropdown {
       display: block;
     }
   }
@@ -335,7 +335,7 @@
   &__bottom {
     margin: 20px 0;
     padding: 20px 0;
-    border-width: 1.5px 0;
+    border-width: 1px 0;
     border-color: var(--header-act-dropdown-border-color);
     border-style: solid;
   }
@@ -343,7 +343,8 @@
   &__separate {
     margin: 20px 0;
     height: 1px;
-    background: var(--header-act-dropdown-border-color);;
+    background: var(--header-act-dropdown-border-color);
+    ;
   }
 
   &__row {
