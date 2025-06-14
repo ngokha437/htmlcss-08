@@ -11,7 +11,7 @@ html.dark {
 
   --top-act-group-bg-color: #292E39;
   --top-act-group-shadow: rgba(0, 0, 0, 0.20);
-  --top-act-group-separate: #EDEDF6;
+  --top-act-group-separate: #545458;
 
   @include abstracts.screen(lg) {
     --header-shadow-color: rgba(0, 0, 0, 0.20);
@@ -36,7 +36,7 @@ html.dark {
   // Category item
   --cate-item-bg: #171C28;
   --cate-item-thumb-bg: #292E39;
-  --cate-item-title-color:#171C28;
+  --cate-item-title-color:#FFF;
 
   // Buttons
   --filter-btn-color: #FFF;
