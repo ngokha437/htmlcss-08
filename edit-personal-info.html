@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Add new card | Grocery Mart</title>
+    <title>Edit personal info | Grocery Mart</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
@@ -58,7 +58,7 @@
                   <h3 class="profile-menu__title">Manage Account</h3>
                   <ul class="profile-menu__list">
                     <li>
-                      <a href="./edit-personal-info.html" class="profile-menu__link">
+                      <a href="#!" class="profile-menu__link">
                         <span class="profile-menu__icon">
                           <img src="./assets/icons/profile.svg" alt="" class="icon" />
                         </span>
@@ -162,20 +162,20 @@
                       <a href="./profile.html">
                         <img src="./assets/icons/arrow-left.svg" alt="" class="cart-info__back-arrow icon" />
                       </a>
-                      Add credit or debit card
+                      Personal info
                     </h2>
 
                     <form action="./profile.html" class="form form-card">
                       <!-- Form row 1 -->
                       <div class="form__row">
                         <div class="form__group">
-                          <label for="first-name" class="form__label form-card__label">First Name</label>
+                          <label for="full-name" class="form__label form-card__label">Full name</label>
                           <div class="form__text-input">
                             <input
                               type="text"
                               name=""
-                              id="first-name"
-                              placeholder="First Name"
+                              id="full-name"
+                              placeholder="Full name"
                               class="form__input"
                               required
                               autofocus
@@ -185,13 +185,13 @@
                           <p class="form__error">Error</p>
                         </div>
                         <div class="form__group">
-                          <label for="last-name" class="form__label form-card__label">Last Name</label>
+                          <label for="email-address" class="form__label form-card__label">Email address</label>
                           <div class="form__text-input">
                             <input
                               type="text"
                               name=""
-                              id="last-name"
-                              placeholder="Last Name"
+                              id="email-address"
+                              placeholder="Email address"
                               class="form__input"
                               required
                             />
@@ -203,48 +203,6 @@
 
                       <!-- Form row 2 -->
                       <div class="form__row">
-                        <div class="form__group">
-                          <label for="card-number" class="form__label form-card__label">Card Number</label>
-                          <div class="form__text-input">
-                            <input
-                              type="text"
-                              name=""
-                              id="card-number"
-                              placeholder="Card Number"
-                              class="form__input"
-                              required
-                            />
-                            <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
-                          </div>
-                          <p class="form__error">Error</p>
-                        </div>
-                        <div class="form__group">
-                          <label for="expiration-date" class="form__label form-card__label">Expiration Date</label>
-                          <div class="form__text-input">
-                            <input
-                              type="text"
-                              name=""
-                              id="expiration-date"
-                              placeholder="MM/YY"
-                              class="form__input"
-                              required
-                            />
-                            <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
-                          </div>
-                          <p class="form__error">Error</p>
-                        </div>
-                      </div>
-
-                      <!-- Form row 3 -->
-                      <div class="form__row">
-                        <div class="form__group">
-                          <label for="card-cvv" class="form__label form-card__label">CVV</label>
-                          <div class="form__text-input">
-                            <input type="text" name="" id="card-cvv" placeholder="CVV" class="form__input" required />
-                            <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
-                          </div>
-                          <p class="form__error">Error</p>
-                        </div>
                         <div class="form__group">
                           <label for="phone-number" class="form__label form-card__label">Phone Number</label>
                           <div class="form__text-input">
@@ -260,25 +218,26 @@
                           </div>
                           <p class="form__error">Error</p>
                         </div>
-                      </div>
-
-                      <div class="form__group">
-                        <label for="set-default-card" class="form__label form-card__label">Card Preferences</label>
-                        <label class="form__checkbox">
-                          <input
-                            type="checkbox"
-                            name=""
-                            id="set-default-card"
-                            checked
-                            class="form__checkbox-input d-none"
-                          />
-                          <span class="form__checkbox-label">Set as default card</span>
-                        </label>
+                        <div class="form__group">
+                          <label for="password" class="form__label form-card__label">Password</label>
+                          <div class="form__text-input">
+                            <input
+                              type="password"
+                              name=""
+                              id="password"
+                              placeholder="Password"
+                              class="form__input"
+                              required
+                            />
+                            <img src="./assets/icons/form-error.svg" alt="" class="form__input-icon-error" />
+                          </div>
+                          <p class="form__error">Error</p>
+                        </div>
                       </div>
 
                       <div class="form-card__bottom">
                         <a class="btn btn--text" href="./profile.html">Cancel</a>
-                        <button class="btn btn--primary btn--rounded">Save Card</button>
+                        <button class="btn btn--primary btn--rounded">Save</button>
                       </div>
                     </form>
                   </div>
