@@ -48,7 +48,8 @@ select {
   border: none;
 }
 
-input, textarea {
+input,
+textarea {
   background: transparent;
 }
 
@@ -80,4 +81,10 @@ em {
 b,
 strong {
   font-weight: 600;
+}
+
+.separate {
+  margin: var(--margin) 0;
+  height: 1px;
+  background: #D2D1D6;
 }
