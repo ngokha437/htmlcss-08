@@ -44,7 +44,7 @@
         <!-- Profile content -->
         <div class="profile-container">
           <div class="row gy-md-3">
-            <div class="col-3 col-xl-4 col-lg-5 col-md-12">
+            <div class="col-3 col-xl-4 d-lg-none">
               <aside class="profile__sidebar">
                 <!-- User -->
                 <div class="profile-user">
@@ -154,13 +154,13 @@
                 </div>
               </aside>
             </div>
-            <div class="col-9 col-xl-8 col-lg-7 col-md-12">
+            <div class="col-9 col-xl-8 col-lg-12">
               <div class="cart-info">
                 <div class="row gy-3">
                   <div class="col-12">
                     <h2 class="cart-info__heading">
                       <a href="./profile.html">
-                        <img src="./assets/icons/arrow-left.svg" alt="" class="cart-info__back-arrow icon">
+                        <img src="./assets/icons/arrow-left.svg" alt="" class="cart-info__back-arrow icon" />
                       </a>
                       Add credit or debit card
                     </h2>
@@ -265,7 +265,13 @@
                       <div class="form__group">
                         <label for="set-default-card" class="form__label form-card__label">Card Preferences</label>
                         <label class="form__checkbox">
-                          <input type="checkbox" name="" id="set-default-card" checked class="form__checkbox-input d-none" />
+                          <input
+                            type="checkbox"
+                            name=""
+                            id="set-default-card"
+                            checked
+                            class="form__checkbox-input d-none"
+                          />
                           <span class="form__checkbox-label">Set as default card</span>
                         </label>
                       </div>
